@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="shortcut icon" href="images/trans-fb.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1></h1>
+   <header>
+      <div class="left-nav">
+         <div class="logo">
+              <ion-icon class="fb-icon" name="logo-facebook"></ion-icon>
+         </div>
+         <div class="search-box">
+              <ion-icon class="search-icon" name="search-outline"></ion-icon>
+              <input type="text" placeholder="Search Facebook">
+         </div>
+      </div>
+      <div class="center-nav">
+         <ul class="center-nav-list">
+             <li class="cnList active" >
+              <a href="#" class=""><ion-icon name="home-outline"></ion-icon></a>
+             </li>
+             <li class="cnList">
+              <a href="#" ><ion-icon name="videocam-outline"></ion-icon></a>
+             </li>
+             <li class="cnList">
+               <a href="#"><ion-icon name="card-outline"></ion-icon></a>
+             </li>
+             <li class="cnList">
+              <a href="#" ><ion-icon name="people-circle-outline"></ion-icon></a>
+             </li>
+             <li class="cnList">
+              <a href="#" ><ion-icon name="game-controller-outline"></ion-icon></a>   
+             </li>
+           
+         </ul>
+         
+      </div>
+      <div class="right-nav">
+          <ul>
+              <li>
+                <a href="#">
+                     <ion-icon name="apps"></ion-icon>   
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                     <ion-icon name="chatbubbles"></ion-icon>
+                </a>
+              </li>
+              <li>
+                 <a href="#">
+                     <ion-icon name="notifications"></ion-icon>
+                 </a>
+              </li>
+              <li id="user">
+                 <a href="#" class="active">
+                    <ion-icon  class="user" name="person"></ion-icon>
+                 </a>
+              </li>
+          </ul>
+          <div class="profile-menu ">
+            <div class="user-pf">
+                <img src="images/blank-profile-picture-973460_1280.png" alt="" width="35px">
+                <p>Mark Zuckerburg</p>
+            </div>
+            <div class="setting-menu">
+                <ul>
+                    <li><a href="#">
+                        <ion-icon name="settings"></ion-icon>
+                        <p>Setting & privacy</p>
+                        <ion-icon class="set arrow" name="chevron-forward"></ion-icon>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <ion-icon name="help-circle"></ion-icon>
+                        <p>Help & support</p>
+                        <ion-icon class="help arrow" name="chevron-forward"></ion-icon>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <ion-icon name="moon"></ion-icon>
+                        <p>Display & accessibility</p>
+                        <ion-icon class="disp arrow" name="chevron-forward"></ion-icon>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <ion-icon name="warning"></ion-icon>
+                        <p>Give feedback</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <ion-icon name="log-out"></ion-icon>
+                        <p>Log out</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bullet-list">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Ad choices</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">K6N &copy; 2024</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+   </header>
+   <div class="container">
+    <div class="left-sidebar">
+        <div class="profile-content">
+            <a href="#"><img id="zuck" src="images/blank-profile-picture-973460_1280.png" width="25px" height="25px" alt="Profile">Mark Zuckerburg</a>
+            <a href="#"><img src="images/friends_1500455.png" width="25px" height= "25px" alt="Friends">Friends </a>
+            <a href="#"><img src="images/fast_11748802.png" width="25px" height="25px" alt="">Memories</a>
+            <a href="#"><img src="images/save-instagram_5662990.png" width="23px" height="25px" alt="Saved">Saved</a>
+            <a href="#"><img src="images/multiple-users-silhouette_33308.png" width="25px" height="25px" alt="Groups">Groups</a>
+            <a href="#"><img src="images/video-camera-outline_54544.png" width="25px" height="25px" alt="Video">Video</a>
+            <a href="#"><img src="images/down-arrow_2985150.png" width="25px" height="25px" alt="See more">See More</a>
+        </div>
+        <div class="shortcuts">
+            <h2>Your Shortcuts</h2>
+            <ul>
+                <li>
+                    <ion-icon name="baseball-outline"></ion-icon>
+                    <a href="#">Cricket</a>
+                </li>
+                <li>
+                    <ion-icon name="football-outline"></ion-icon>
+                    <a href="#">Football</a>
+                </li>
+                <li>
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <ion-icon name="bonfire-outline"></ion-icon>
+                    <a href="#">Memes</a>
+                </li>
+                <li>
+                    <ion-icon name="wallet-outline"></ion-icon>
+                    <a href="#">Trading</a>
+                </li>
+                <li>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                    <a href="#">See More</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bullet-list">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Ad choices</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">K6N &copy; 2024</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="story-grid">
+            <div class="story story-1">
+                <img class="zoom" src="images/Mark Zuck.jpg" alt="">
+                <div class="text text-1">
+                    <ion-icon name="add-outline"></ion-icon>
+                    <p>Create Story</p>
+                </div>
+                
+            </div>
+            <div class="story story-2">
+                 <img class="zoom" src="images/Messi.jpeg" alt="">
+                 <div class="text"> 
+                    <img src="images/WcMessi.jpeg" alt="">
+                   <p>Lionel Messi</p>
+                </div>  
+            </div>
+            <div class="story story-3">
+                <img class="zoom" src="images/Cr7.jpg" alt="">
+                <div class="text"> 
+                    <img src="images/ronaldo.jpeg" alt="">
+                     <p>Cristiano Ronaldo</p>
+                </div>
+            </div>
+            <div class="story story-4">
+                <img class="zoom" src="images/Sachin-Tendulkar.jpg" alt="">
+                <div class="text">
+                    <img src="images/SRT.jpg" alt="">
+                    <p>Sachin Tendulkar</p>
+                </div>
+            </div>
+        </div>
+        <div class="tweet-box">
+            <div class="typer">
+                <ion-icon class="user" name="person"></ion-icon>
+                 <input type="text" placeholder="What's on your mind, Mark?">
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <ion-icon class="video" name="videocam"></ion-icon>
+                        <a href="#">Live video</a>
+                    </li>
+                    <li>
+                        <ion-icon class="image" name="images"></ion-icon>
+                        <a href="#">Photo/Video</a>
+                    </li>
+                    <li>
+                        <ion-icon class="smile" name="happy-outline"></ion-icon>
+                        <a href="#">Feeling/Activity</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-info">
+               <div class="user-info">
+                <div class="user-pic">
+                  <img src="images/WcMessi.jpeg" alt="messi">
+                </div>
+                <div class="user-text"> 
+                    <p>Lionel Messi </p>
+                    <a href="#">Just now</a>
+                </div>
+               </div>
+               <div class="more-icon">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+               </div>
+            </div>
+            <div class="post-caption">
+                <p>mira que bonito es! 🏆</p>
+            </div>
+            <div class="post-pic">
+                <img src="images/messiii.jpg" alt="">
+            </div>
+            <div class="reach-section">
+                <div class="likes">
+                   <div class="like">
+                    <ion-icon name="thumbs-up"></ion-icon>
+                   </div> 
+                    <span>Cristiono Ronaldo and 1.2K others</span>
+                </div>
+                <div class="reach">
+                   <div class="comments">
+                    <span>501</span>
+                    <ion-icon name="chatbubble"></ion-icon>
+                   </div>
+                   <div class="share">
+                    <span>121</span>
+                    <ion-icon name="share-social"></ion-icon>
+                   </div>
+                </div>
+            </div>
+            <div class="interact-section">
+                <ul>
+                    <li class="like-list">
+                        <ion-icon class="like-icon"  name="thumbs-up-outline"></ion-icon>
+                        <a class="like-text" href="javascript:void(0)">Like</a>
+                    </li>
+                    <li>
+                        <ion-icon  name="chatbubble-outline"></ion-icon>
+                        <a href="javascript:void(0)">Comment</a>
+                    </li>
+                    <li>
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <a href="javascript:void(0)">Share</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-info">
+               <div class="user-info">
+                <div class="user-pic">
+                  <img src="images/45RO.jpeg" alt="Rohit">
+                </div>
+                <div class="user-text"> 
+                    <p>Rohit Sharma </p>
+                    <a href="#">14 minutes ago</a>
+                </div>
+               </div>
+               <div class="more-icon">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+               </div>
+            </div>
+            <div class="post-caption">
+                <p>Always be my side ❤️</p>
+            </div>
+            <div class="post-pic">
+                <img src="images/rohitsharma45-14-02-2024-0001.jpg" alt="">
+            </div>
+            <div class="reach-section">
+                <div class="likes">
+                   <div class="like">
+                    <ion-icon name="thumbs-up"></ion-icon>
+                   </div> 
+                    <span>Sachin Tendulkar and 4.2K others</span>
+                </div>
+                <div class="reach">
+                   <div class="comments">
+                    <span>706</span>
+                    <ion-icon name="chatbubble"></ion-icon>
+                   </div>
+                   <div class="share">
+                    <span>264</span>
+                    <ion-icon name="share-social"></ion-icon>
+                   </div>
+                </div>
+            </div>
+            <div class="interact-section">
+                <ul>
+                    <li class="like-list">
+                        <ion-icon  class="like-icon"  name="thumbs-up-outline"></ion-icon>
+                        <a class="like-text" href="javascript:void(0)">Like</a>
+                    </li>
+                    <li>
+                        <ion-icon  name="chatbubble-outline"></ion-icon>
+                        <a href="javascript:void(0)">Comment</a>
+                    </li>
+                    <li>
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <a href="javascript:void(0)">Share</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-info">
+               <div class="user-info">
+                <div class="user-pic">
+                  <img src="images/viratk.jpeg" alt="Virat">
+                </div>
+                <div class="user-text"> 
+                    <p>Virat Kohli </p>
+                    <a href="javascript:void(0)">28 minutes ago</a>
+                </div>
+               </div>
+               <div class="more-icon">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+               </div>
+            </div>
+            <div class="post-caption">
+                <p>I don't have IPL tropies bro,But i have Anushka 💌</p>
+            </div>
+            <div class="post-pic">
+                <img src="images/virat.kohli-14-02-2024-0001.jpg" alt="">
+            </div>
+            <div class="reach-section">
+                <div class="likes">
+                   <div class="like">
+                    <ion-icon name="thumbs-up"></ion-icon>
+                   </div> 
+                    <span>Rohit Sharma and 6.2K others</span>
+                </div>
+                <div class="reach">
+                   <div class="comments">
+                    <span>808</span>
+                    <ion-icon name="chatbubble"></ion-icon>
+                   </div>
+                   <div class="share">
+                    <span>183</span>
+                    <ion-icon name="share-social"></ion-icon>
+                   </div>
+                </div>
+            </div>
+            <div class="interact-section">
+                <ul>
+                    <li class="like-list">
+                        <ion-icon  class="like-icon" name="thumbs-up-outline"></ion-icon>
+                        <a class="like-text" href="javascript:void(0)">Like</a>
+                    </li>
+                    <li>
+                        <ion-icon  name="chatbubble-outline"></ion-icon>
+                        <a href="javascript:void(0)">Comment</a>
+                    </li>
+                    <li>
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <a href="javascript:void(0)">Share</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-info">
+               <div class="user-info">
+                <div class="user-pic">
+                  <img src="images/neymaaaaaar.jpeg" alt="Neymar">
+                </div>
+                <div class="user-text"> 
+                    <p>Neymar Jr </p>
+                    <a href="javascript:void(0)">57 minutes ago</a>
+                </div>
+               </div>
+               <div class="more-icon">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+               </div>
+            </div>
+            <div class="post-caption">
+                <p>Eu adoro lesões, mano 💛</p>
+            </div>
+            <div class="post-pic">
+                <img src="images/neymarjr-14-02-2024-0001.jpg" alt="">
+            </div>
+            <div class="reach-section">
+                <div class="likes">
+                   <div class="like">
+                    <ion-icon name="thumbs-up"></ion-icon>
+                   </div> 
+                    <span>Virat Kohli and 10.2K others</span>
+                </div>
+                <div class="reach">
+                   <div class="comments">
+                    <span>1018</span>
+                    <ion-icon name="chatbubble"></ion-icon>
+                   </div>
+                   <div class="share">
+                    <span>313</span>
+                    <ion-icon name="share-social"></ion-icon>
+                   </div>
+                </div>
+            </div>
+            <div class="interact-section">
+                <ul>
+                    <li class="like-list">
+                        <ion-icon  class="like-icon" name="thumbs-up-outline"></ion-icon>
+                        <a class="like-text" href="javascript:void(0)">Like</a>
+                    </li>
+                    <li>
+                        <ion-icon  name="chatbubble-outline"></ion-icon>
+                        <a href="javascript:void(0)">Comment</a>
+                    </li>
+                    <li>
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <a href="javascript:void(0)">Share</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-info">
+               <div class="user-info">
+                <div class="user-pic">
+                  <img src="images/ronaldo.jpeg" alt="Ronaldo">
+                </div>
+                <div class="user-text"> 
+                    <p>Cristiano Ronaldo</p>
+                    <a href="javascript:void(0)">3 hours ago</a>
+                </div>
+               </div>
+               <div class="more-icon">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+               </div>
+            </div>
+            <div class="post-caption">
+                <p>Suiiiii 🚀 </p>
+            </div>
+            <div class="post-pic">
+                <img src="images/cristiano-14-02-2024-0001.jpg" alt="">
+            </div>
+            <div class="reach-section">
+                <div class="likes">
+                   <div class="like">
+                    <ion-icon name="thumbs-up"></ion-icon>
+                   </div> 
+                    <span>Lionel Messi and 20.2K others</span>
+                </div>
+                <div class="reach">
+                   <div class="comments">
+                    <span>4018</span>
+                    <ion-icon name="chatbubble"></ion-icon>
+                   </div>
+                   <div class="share">
+                    <span>753</span>
+                    <ion-icon name="share-social"></ion-icon>
+                   </div>
+                </div>
+            </div>
+            <div class="interact-section">
+                <ul>
+                    <li class="like-list">
+                        <ion-icon  class="like-icon" name="thumbs-up-outline"></ion-icon>
+                        <a class="like-text" href="javascript:void(0)">Like</a>
+                    </li>
+                    <li>
+                        <ion-icon  name="chatbubble-outline"></ion-icon>
+                        <a href="javascript:void(0)">Comment</a>
+                    </li>
+                    <li>
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <a href="javascript:void(0)">Share</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-info">
+               <div class="user-info">
+                <div class="user-pic">
+                  <img src="images/SRT.jpg" alt="Ronaldo">
+                </div>
+                <div class="user-text"> 
+                    <p>Sachin Tendulkar</p>
+                    <a href="javascript:void(0)">4 hours ago</a>
+                </div>
+               </div>
+               <div class="more-icon">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+               </div>
+            </div>
+            <div class="post-caption">
+                <p>Max 🐶💙 </p>
+            </div>
+            <div class="post-pic">
+                <img src="images/sachintendulkar-14-02-2024-0001.jpg" alt="">
+            </div>
+            <div class="reach-section">
+                <div class="likes">
+                   <div class="like">
+                    <ion-icon name="thumbs-up"></ion-icon>
+                   </div> 
+                    <span>Neymar Jr and 9.2K others</span>
+                </div>
+                <div class="reach">
+                   <div class="comments">
+                    <span>2024</span>
+                    <ion-icon name="chatbubble"></ion-icon>
+                   </div>
+                   <div class="share">
+                    <span>602</span>
+                    <ion-icon name="share-social"></ion-icon>
+                   </div>
+                </div>
+            </div>
+            <div class="interact-section">
+                <ul>
+                    <li class="like-list">
+                        <ion-icon  class="like-icon" name="thumbs-up-outline"></ion-icon>
+                        <a class="like-text" href="javascript:void(0)">Like</a>
+                    </li>
+                    <li>
+                        <ion-icon  name="chatbubble-outline"></ion-icon>
+                        <a href="javascript:void(0)">Comment</a>
+                    </li>
+                    <li>
+                        <ion-icon name="share-social-outline"></ion-icon>
+                        <a href="javascript:void(0)">Share</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="right-sidebar"> 
+        <div class="pages-profiles">
+            <h2>Your Pages and Profiles</h2>
+            <ul>
+                <li><ion-icon name="logo-facebook"></ion-icon>
+                    <a href="#">Facebook Club</a>
+                </li>
+            </ul>
+            <ul class="switch-list">
+                <li><ion-icon name="person-circle-outline"></ion-icon><a href="#">Switch into Page</a></li>
+                <li><ion-icon name="megaphone-outline"></ion-icon><a href="#">Create Promotion</a></li>
+            </ul>
+        </div>
+        <div class="birthdays">
+            <h2>Birthdays</h2>
+            <ul>
+                <li><ion-icon name="gift-outline"></ion-icon>
+                    <a href="#"><strong>Cristiano Ronaldo</strong> and <strong>Neymar Jr</strong> have birthdays today</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h2>Contacts</h2>
+            <ul>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Lionel Messi</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Cristiano Ronaldo</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Neymar Jr</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Sachin Tendulkar</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Rohit Sharma</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Virat Kohli</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Jasprit Bumrah</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">MS Dhoni</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Ronaldinho</a>
+            </li>
+            <li><ion-icon name="people-outline"></ion-icon>
+                <a href="">Maldini</a>
+            </li>
+        </ul>
+        </div>
+        <div class="group-convo">
+            <h2>Groups Conversation</h2>
+            <ul>
+                <li>
+                    <ion-icon name="football-outline"></ion-icon>
+                    <a href="#">LM10</a>
+                </li>
+                <li>
+                    <ion-icon name="football-outline"></ion-icon>
+                    <a href="#">CR7</a>
+                </li>
+                <li>
+                    <ion-icon name="add-outline"></ion-icon>
+                    <a href="#">Create New Group</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </div>
+    
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
